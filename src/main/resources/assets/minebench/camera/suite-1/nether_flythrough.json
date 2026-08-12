@@ -1,0 +1,11 @@
+{
+  "id": "suite-1/nether_flythrough",
+  "loop": true,
+  "keyframes": [
+    {"timeSeconds": 0.0, "position": {"x": 1024.5, "y": 112.0, "z": 928.5}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+    {"timeSeconds": 15.0, "position": {"x": 1120.5, "y": 88.0, "z": 1024.5}, "orientation": {"x": 0.0, "y": 0.7071067812, "z": 0.0, "w": 0.7071067812}},
+    {"timeSeconds": 30.0, "position": {"x": 1024.5, "y": 64.0, "z": 1120.5}, "orientation": {"x": 0.0, "y": 1.0, "z": 0.0, "w": 0.0}},
+    {"timeSeconds": 45.0, "position": {"x": 928.5, "y": 88.0, "z": 1024.5}, "orientation": {"x": 0.0, "y": -0.7071067812, "z": 0.0, "w": 0.7071067812}},
+    {"timeSeconds": 60.0, "position": {"x": 1024.5, "y": 112.0, "z": 928.5}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}}
+  ]
+}

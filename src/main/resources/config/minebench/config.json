@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "mode": "record-only",
+  "defaultLabel": "Baseline",
+  "defaultWorkloadTarget": "balanced",
+  "defaultIterations": 5,
+  "warmupSeconds": 20,
+  "settlingSeconds": 5,
+  "maxPreparationSeconds": 180,
+  "maxWarmupSeconds": 180,
+  "frameCapacity": 900000,
+  "autoStartManagedPlan": false,
+  "exitAfterManagedRun": false,
+  "showProgressOverlay": false
+}

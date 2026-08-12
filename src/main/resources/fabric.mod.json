@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "minebench",
+  "version": "${version}",
+  "name": "MineBench",
+  "description": "Deterministic, low-overhead Minecraft rendering benchmarks with raw frame data and repeatability analysis.",
+  "authors": ["Jonyboylovespie"],
+  "contact": {
+    "sources": "https://github.com/Jonyboylovespie/MineBench",
+    "issues": "https://github.com/Jonyboylovespie/MineBench/issues"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.minebench.MineBench"
+    ],
+    "client": [
+      "com.minebench.client.MineBenchClient"
+    ],
+    "modmenu": [
+      "com.minebench.client.MineBenchModMenu"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "minebench.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "sodium": "*",
+    "modmenu": "*",
+    "iris": "*"
+  }
+}

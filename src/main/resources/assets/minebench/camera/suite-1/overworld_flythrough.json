@@ -1,0 +1,11 @@
+{
+  "id": "suite-1/overworld_flythrough",
+  "loop": true,
+  "keyframes": [
+    {"timeSeconds": 0.0, "position": {"x": 2048.5, "y": 148.0, "z": 1952.5}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+    {"timeSeconds": 15.0, "position": {"x": 2144.5, "y": 132.0, "z": 2048.5}, "orientation": {"x": 0.0, "y": 0.7071067812, "z": 0.0, "w": 0.7071067812}},
+    {"timeSeconds": 30.0, "position": {"x": 2048.5, "y": 116.0, "z": 2144.5}, "orientation": {"x": 0.0, "y": 1.0, "z": 0.0, "w": 0.0}},
+    {"timeSeconds": 45.0, "position": {"x": 1952.5, "y": 132.0, "z": 2048.5}, "orientation": {"x": 0.0, "y": -0.7071067812, "z": 0.0, "w": 0.7071067812}},
+    {"timeSeconds": 60.0, "position": {"x": 2048.5, "y": 148.0, "z": 1952.5}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}}
+  ]
+}

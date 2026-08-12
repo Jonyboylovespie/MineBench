@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.minebench.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "FrameBoundaryMixin",
+    "GameRendererWorkloadMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

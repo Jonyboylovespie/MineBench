@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minebench.dev/schema/managed-plan-1.json",
+  "title": "MineBench managed plan",
+  "type": "object",
+  "required": ["schemaVersion", "label", "mode"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "label": { "type": "string", "minLength": 1 },
+    "mode": { "enum": ["quick", "standard", "extended"] },
+    "workloadTarget": { "enum": ["cpu", "balanced", "gpu"] },
+    "iterations": { "type": "integer", "minimum": 1 },
+    "scenes": { "type": "array", "items": { "type": "string" } },
+    "expectedWorldSeed": { "type": "integer", "const": 7462910451 },
+    "requiredWorldName": { "type": "string", "const": "MineBench Suite 1" },
+    "requireDedicatedWorld": { "type": "boolean" },
+    "autoCreateWorld": { "type": "boolean" },
+    "autoStart": { "type": "boolean" },
+    "exitOnCompletion": { "type": "boolean" },
+    "orderSeed": { "type": "integer" }
+  }
+}

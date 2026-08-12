@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "minebenchVersion": "1.0.0",
+  "suiteVersion": "1",
+  "runId": "example-anonymized-run",
+  "label": "Example baseline",
+  "mode": "standard",
+  "settingsMode": "record-only",
+  "environment": {
+    "minecraftVersion": "26.2",
+    "rendererIdentity": "standard renderer",
+    "displayResolution": "1920x1080",
+    "framebufferResolution": "1920x1080",
+    "worldSeed": "7462910451",
+    "worldName": "MineBench Suite 1",
+    "sceneId": "multiple (see scenes)",
+    "routeHash": "multiple (see scenes)"
+  },
+  "scenes": [],
+  "warnings": []
+}

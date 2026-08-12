@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "label": "Baseline",
+  "mode": "standard",
+  "workloadTarget": "balanced",
+  "iterations": 5,
+  "scenes": [
+    "overworld_panorama",
+    "overworld_flythrough",
+    "nether_flythrough",
+    "end_flythrough",
+    "chunk_rebuild"
+  ],
+  "expectedWorldSeed": 7462910451,
+  "requiredWorldName": "MineBench Suite 1",
+  "requireDedicatedWorld": true,
+  "autoCreateWorld": true,
+  "autoStart": true,
+  "exitOnCompletion": false,
+  "orderSeed": 20260811,
+  "statusFile": "config/minebench/managed-status.json"
+}

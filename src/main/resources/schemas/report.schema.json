@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minebench.dev/schema/report-1.json",
+  "title": "MineBench report",
+  "type": "object",
+  "required": ["schemaVersion", "suiteVersion", "environment", "scenes", "warnings"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "suiteVersion": { "type": "string" },
+    "runId": { "type": "string" },
+    "workloadTarget": { "enum": ["cpu", "balanced", "gpu"] },
+    "renderScale": { "type": "number", "minimum": 0.1 },
+    "environment": { "type": "object" },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sceneId", "dimension", "anchor", "routeHash", "sceneContentHash", "iterations"]
+      }
+    },
+    "warnings": { "type": "array" }
+  }
+}
