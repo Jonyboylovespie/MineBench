@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 — Minecraft 26.3 update
+
+- Updated the Fabric/Minecraft toolchain and optional integrations for Minecraft 26.3.
+- Revalidated the frame-boundary mixin and bumped the mod version.
+
 ## 1.0.0 — initial release
 
 - Added Fabric 26.2 / Java 25 project scaffold with reproducible Gradle wrapper.

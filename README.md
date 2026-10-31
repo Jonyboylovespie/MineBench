@@ -2,7 +2,7 @@
 
 MineBench is a client-side Fabric mod for deterministic Minecraft rendering benchmarks. It treats frame intervals as the primary data, keeps every iteration visible, records an environment fingerprint, and writes raw samples locally for independent verification.
 
-Version 1.0.0 targets Minecraft Java Edition 26.2, Fabric, and Java 25. Benchmark methodology is versioned independently as Suite 1.
+Version 1.0.1 targets Minecraft Java Edition 26.3, Fabric, and Java 25. Benchmark methodology is versioned independently as Suite 1.
 
 ## What it measures
 
@@ -18,7 +18,7 @@ Quick mode runs one short health check. Standard mode defaults to five iteration
 
 ## Installation and development
 
-Install Fabric Loader, Fabric API, and Java 25 for Minecraft 26.2. MineBench is client-only. Sodium, Iris, and Mod Menu are optional and are recorded when detected; they are not bundled.
+Install Fabric Loader, Fabric API, and Java 25 for Minecraft 26.3. MineBench is client-only. Sodium, Iris, and Mod Menu are optional and are recorded when detected; they are not bundled.
 
 ```text
 ./gradlew build

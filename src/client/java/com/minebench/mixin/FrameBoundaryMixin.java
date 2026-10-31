@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 /**
- * Version-pinned frame boundary for Minecraft 26.2. The method is public in the deobfuscated client API as
+ * Version-pinned frame boundary for Minecraft 26.3. The method is public in the deobfuscated client API as
  * renderFrame(boolean), so exactly one callback is emitted per client frame. Menu/loading frames are gated in the
  * client adapter and never enter the sampler.
  */

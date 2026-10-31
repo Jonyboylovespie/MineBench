@@ -10,7 +10,7 @@ Frame sampling writes timestamps and flags to preallocated primitive buffers. Th
 
 ## ADR-0003: use the version-pinned client frame boundary
 
-`Minecraft.renderFrame(boolean)` is the selected 26.2 boundary. The mixin is required and invokes the sampler once at method tail. The client adapter requires a loaded world and no open screen, so menus and loading overlays cannot become samples. This hook must be revalidated for every Minecraft mapping update.
+`Minecraft.renderFrame(boolean)` is the selected 26.3 boundary. The mixin is required and invokes the sampler once at method tail. The client adapter requires a loaded world and no open screen, so menus and loading overlays cannot become samples. This hook must be revalidated for every Minecraft mapping update.
 
 ## ADR-0004: preserve invalid evidence
 

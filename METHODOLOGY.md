@@ -1,6 +1,6 @@
 # MineBench methodology — Suite 1
 
-This document defines the statistics and validity rules used by MineBench 1.0.0. A methodology, seed, coordinate, route, or workload change increments the suite version.
+This document defines the statistics and validity rules used by MineBench 1.0.1. A methodology, seed, coordinate, route, or workload change increments the suite version.
 
 ## Suite 1 world and workloads
 
@@ -16,7 +16,7 @@ The three flythrough routes are driven by monotonic wall-clock time, not rendere
 
 ## Timing and sampling
 
-MineBench records one timestamp at the tail of the Minecraft 26.2 `Minecraft.renderFrame(boolean)` method. The callback is active only for a loaded world with no open screen and only in `MEASURING`. `System.nanoTime()` supplies a monotonic clock. The first timestamp is an anchor; it is not treated as an ordinary frame interval. Every subsequent interval is stored in a fixed preallocated `long[]` as nanoseconds.
+MineBench records one timestamp at the tail of the Minecraft 26.3 `Minecraft.renderFrame(boolean)` method. The callback is active only for a loaded world with no open screen and only in `MEASURING`. `System.nanoTime()` supplies a monotonic clock. The first timestamp is an anchor; it is not treated as an ordinary frame interval. Every subsequent interval is stored in a fixed preallocated `long[]` as nanoseconds.
 
 The measured duration is `lastAcceptedTimestamp - firstAcceptedTimestamp`. No report writing, logging, JSON/CSV encoding, sorting, UI rebuilding, collection growth, or network I/O occurs in the sampling callback. Sorting and encoding happen after measurement. If the fixed buffer overflows, aggregate counters continue but raw-data-dependent percentile results are flagged incomplete and the iteration is invalid by default.
 
@@ -66,4 +66,4 @@ Reports include mod versions, renderer/shader/resource-pack state and shaderpack
 
 ## Development frame-boundary decision
 
-For 26.2, MineBench uses a required mixin at `Minecraft.renderFrame(boolean)` and verifies the callback against an independent render counter. The method descriptor is version-pinned; any Minecraft upgrade must revalidate it before release.
+For 26.3, MineBench uses a required mixin at `Minecraft.renderFrame(boolean)` and verifies the callback against an independent render counter. The method descriptor is version-pinned; any Minecraft upgrade must revalidate it before release.

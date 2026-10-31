@@ -15,7 +15,6 @@ import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
-import org.lwjgl.glfw.GLFW;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -60,9 +59,9 @@ public final class MineBenchClient implements ClientModInitializer {
         preferences = loadPreferences();
         controller = new ClientBenchmarkController(preferences.frameCapacity);
         openKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-                "key.minebench.open", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_F8, KeyMapping.Category.MISC));
+                "key.minebench.open", InputConstants.Type.KEYBOARD, InputConstants.KEY_F8, KeyMapping.Category.MISC));
         abortKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-                "key.minebench.abort", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_ESCAPE, KeyMapping.Category.MISC));
+                "key.minebench.abort", InputConstants.Type.KEYBOARD, InputConstants.KEY_ESCAPE, KeyMapping.Category.MISC));
 
         ClientTickEvents.END_CLIENT_TICK.register(MineBenchClient::onClientTick);
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(

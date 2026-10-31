@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "minebenchVersion": "1.0.0",
+  "minebenchVersion": "1.0.1",
   "suiteVersion": "1",
   "runId": "example-anonymized-run",
   "label": "Example baseline",
   "mode": "standard",
   "settingsMode": "record-only",
   "environment": {
-    "minecraftVersion": "26.2",
+    "minecraftVersion": "26.3",
     "rendererIdentity": "standard renderer",
     "displayResolution": "1920x1080",
     "framebufferResolution": "1920x1080",

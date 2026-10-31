@@ -12,7 +12,7 @@ import java.util.Map;
 
 public final class BenchmarkReport {
     public int schemaVersion = ReportSchema.CURRENT_VERSION;
-    public String minebenchVersion = "1.0.0";
+    public String minebenchVersion = "1.0.1";
     public String suiteVersion = "1";
     public String runId = "unavailable";
     public String label = "Unnamed";
